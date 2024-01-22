@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <script src="script.js"></script> -->
+    <style>
+        .lightmode{
+        background-color: white;
+        color: black;
+    }
+
+    .darkmode{
+        background-color: black;
+        color: white;
+    }
+    </style>
+</head>
+<body class="darkmode">
+    <h1>JavaScript Toggle Dark Mode</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, obcaecati?</p>
+    <button onclick="lightmode()">Light Mode</button>
+    <button onclick="darkmode()">Dark Mode</button>
+<script>
+
+function lightmode(){
+    document.getElementsByTagName('body')[0].className = "lightmode"
+    }
+
+function darkmode(){
+    document.getElementsByTagName('body')[0].className = "darkmode"
+}
+</script>
+</body>
+</html>
